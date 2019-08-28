@@ -18,6 +18,6 @@ function onFormSubmit() {
     // check out documentation to get from bdy and insert a new row with the entry values
 }
 function playSong(){
-    var audio = new Audio('LaCampanella.mp3')
+    var audio = new Audio('./assets/LaCampanella.mp3')
     audio.play();
 }
