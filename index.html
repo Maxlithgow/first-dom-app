@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Max's DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Max's DOM app</h1>
+        </div>
+
+    </header>
+
+    <section class="container">
+        <div class="center">
+            <div class="image-container">
+                <img class="image" src="./assets/profile.png">
+            </div>
+
+            <h1>
+                Max's bio: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </h1>
+
+        </div>
+
+        <div class="center"style="width:100%">
+            <form id="my-form" onsubmit="event.preventDefault();playSong()">
+               
+                <input class="btn" type="submit" value="Play song">
+                <hr>
+
+            </form>
+
+        </div>
+
+        <div class="center"style="width:100%">
+            <form id="my-form" onsubmit="event.preventDefault();onFormSubmit()">
+                <h1>Add User</h1>
+                <div class="msg"></div>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email">
+                </div>
+                
+                <input class="btn" type="submit" value="Submit">
+            </form>
+            <hr>
+
+            <table class="table" id="my-table">
+                <thead>
+                    <tr>
+                        <th>
+                            User Name
+                        </th>
+                        <th>
+                            Email
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
